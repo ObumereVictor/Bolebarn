@@ -1,0 +1,119 @@
+<!--WEBSITE FOR BOLE BARN-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD OF THE PAGE-->
+    <head>
+        <title>The Bole Barn</title>
+
+        <!--EXTERNAL LINKS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <!--MEDIAQUERY FOR DIFFERENT SCREEN SIZE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!--BODY OF THE PAGE-->
+    <body>
+        <main>
+            <nav>
+                <!--COMPANY LOGO-->
+                <div class="com-logo">
+                    <img src="/img/bole-logo.jpg" alt="Company Logo">
+                    <a class="logo-link" href="index.html"></a>
+                </div>
+
+                <div class="toggle">
+                    <i name="menu" class="fa fa-bars"></i>
+                    <i name="close" class="fa fa-times"></i>
+                </div>
+
+                <div class="nav-links-div">
+                    <ul class="nav-links">
+                        <li><a href="#home" >HOME</a></li>
+                        <li><a href="#prices">PRICES</a></li>
+                        <li><a href="#reviews" >REVIEWS</a></li>
+                        <li><a href="#about-us" >ABOUT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--SECTIONS-->
+            <section id="home">
+                <div class="vid-div">
+                    <video loop autoplay width="5000px;" height="auto">
+                        <source src="/vid/vid1.mp4">
+                    </video>
+                </div>
+                
+                <div class="about-com">
+                    <div class="about-com-info">
+                        <p>Bole Barn is the best street food you'll ever have.<br> It's combination of roasted plantain, roasted yam and fish. Our Palmwine serves as a bonus for that local feeling.</p>
+                    </div>
+                  
+                </div>
+            </section>
+
+
+            <section id="prices">
+                
+                <header>
+                    <div class="head-title">
+                        <h3>PRICE LIST</h3>
+                    </div>
+                </header>
+                    <div class="product-div">
+
+                        
+                    </div>
+            </section>
+
+            <section id="reviews">
+                <header>
+                    <div class="head-title">
+                        <h3>REVIEWS</h3>
+                    </div>
+                </header>
+                <i>Reviews From our customers:</i>
+                <div class="reviews">
+                    <img src="/img/reviews/review1.jpg">
+                </div>
+            </section>
+
+            <section id="about-us">
+                
+                <header>
+                    <div class="head-title">
+                        <h3>ABOUT US</h3>
+                    </div>
+                </header>
+                <div class="info">We're open on Mondays to Saturdays from 11am to 9pm.<br>
+                    We do pickups and deliveries
+                </div>
+                
+
+                <div class="about">
+                    <div class="location">
+                        <i class="fa fa-map-marker"></i>&nbsp;
+                        <p>Addo Road, Opposite Grocery Bazaar, Ajah, Lagos.</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone" ></i>&nbsp;
+                        <p>09032448962</p>
+                    </div>
+                    <div class="socials">
+                        <i onclick="iclickLink()" class="fa fa-instagram" ><a class="insta-link" href="https://instagram.com/thebolebarn?igshid=MzRlODBiNWFlZA==" target="_blank"></a></i>
+                        <i onclick="wclickLink()" class="fa fa-whatsapp" > <a class="whats-link" href="https://wa.link/1h3lcr" target="_blank"></a></i>
+
+                       
+                        
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!--LINKING JS WITH HTML-->
+        <script src="script.js"></script>
+    </body>
+</html>

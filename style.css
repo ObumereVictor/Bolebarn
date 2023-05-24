@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pat-font: 'Patrick Hand SC', cursive;
+    --box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main {
+    min-height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between !important;
+    /* background-color: grey; */
+    height: 10vh;
+    position: fixed !important;
+    width: 100vw;
+    align-items: center;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--pat-font);
+    display: block !important;
+
+}
+.nav-links li a:hover {
+    font-weight: bolder;
+}
+.com-logo {
+    height: 100%;
+    border-radius: 50%;
+    width: 47px;
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.com-logo img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.nav-links-div {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    align-items: center;
+    display: flex !important;
+    z-index: 5 !important;
+    overflow-x: hidden;
+
+
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+
+}
+.nav-links > * {
+    display: block;
+    color: #fff;
+}
+.nav-links li::after {
+    content: '';
+    width: 0%;
+    background: rgb(85, 18, 18);
+    height: 3px;
+    margin: auto;
+    display: block;
+    transition: 1s;
+    margin-top: 2px
+}
+.nav-links li:hover::after {
+    width: 100%;
+}
+.toggle {
+    z-index: 6;
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+.toggle [name="close"] {
+    display: none;
+}
+.toggle.show [name="close"] {
+    display: block;
+} 
+.toggle.show [name="menu"] {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav-links-div {
+        height: 100vh;
+        width: 30%;
+        align-items: start;
+        transform: translateX(100%);
+        transition: 2s;
+        top: 0;
+        overflow-x: hidden !important;
+        z-index: 2;
+        background-color: #fff;
+    }
+    .scroll {
+        transform: translateX(100%) !important;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+        padding-right: 0rem;
+
+    }
+    .nav-links > * {
+        color: #000;
+    }
+    .toggle {
+        display: block;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links li a {
+        text-align: center;
+    }
+    #prices {
+        height: fit-content;
+        position: relative;
+        overflow: auto;
+    }
+    .product-div {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px
+    }
+   
+   
+
+}
+.vid-div {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+
+}
+video {
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    object-fit: fill;
+    
+}
+.about-com {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255, 0.5);
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* section {
+    height: 90vh;
+    width: 100vw;
+} */
+
+
+.about-com-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 50%;
+    width: 65%;
+    border-radius: 10px;
+    border: 1px solid rgb(91, 82, 82);
+    backdrop-filter: blur(3px);
+    box-shadow: var(--box-shadow)
+}
+
+.about-com-info p {
+    font-family: 'Patrick Hand SC', cursive;
+    margin: 20px;
+    text-align: center;
+
+}
+
+header h3 {
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .head-title::after {
+    content: '';
+    height: 4px;
+    display: block;
+    background: rgb(85, 18, 18);;
+    margin: auto;
+    width: 30%;
+    
+}
+
+#home {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+#prices {
+    height: 90vh;
+    /* height: fit-content; */
+    padding-top: 5vh;
+    position: relative;
+}
+
+.product-div {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    height: fit-content;
+    gap: 1rem;
+    padding-top: 10px;
+}
+
+.product {
+    width: 40%; 
+    float: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;   
+    box-shadow: var(--box-shadow);
+    background-color: transparent;
+    border-radius: 5px;
+      
+}
+.product > * {
+    margin: 2px
+}
+
+.product img {
+    height: 120px;
+    overflow: hidden;
+    /* margin-bottom: 5px; */
+    box-shadow: 0px 0px 5px 2px rgb(85, 18, 18);
+    border-radius: 4px;
+    width: 120px;
+
+}
+.product div h2 {
+    font-size: 10px;
+}
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+
+}
+hr {
+    width: 150px;
+    height: 1.5px;
+    background-color: #000;
+}
+
+#reviews {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 10vh;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+
+
+}
+.reviews img {
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+#reviews i {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--pat-font);
+}
+
+#about-us {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10vh
+}
+
+
+.about {
+    background-color: rgb(85, 18, 18, 0.3); 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+.about > * {
+    display: flex;
+    align-items: center;
+  
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.info {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+
+}
+.socials {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.socials i {
+    font-size: 25px
+}
+
