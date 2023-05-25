@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,500&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font)
 }
 :root {
-    --pat-font: 'Patrick Hand SC', cursive;
+    --font: 'Raleway', sans-serif;
     --box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
 }
 main {
     min-height: 100vh;
@@ -27,7 +28,6 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: black;
-    font-family: var(--pat-font);
     display: block !important;
 
 }
@@ -200,7 +200,6 @@ video {
 }
 
 .about-com-info p {
-    font-family: 'Patrick Hand SC', cursive;
     margin: 20px;
     text-align: center;
 
@@ -282,7 +281,6 @@ header .head-title::after {
     display: flex;
     justify-content: space-between;
     width: 120px;
-    font-family: 'Poppins', sans-serif;
 
 }
 hr {
@@ -316,7 +314,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--pat-font);
 }
 
 #about-us {
@@ -343,7 +340,6 @@ hr {
     margin: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -351,7 +347,6 @@ hr {
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
     padding: 20px;
 
 }
